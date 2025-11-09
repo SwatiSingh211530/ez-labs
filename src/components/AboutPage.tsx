@@ -1,6 +1,5 @@
 import './AboutPage.css';
 import BackgroundTexture from './BackgroundTexture.svg';
-import ImageCard1 from '../assets/image_card1.png';
 import Sponsor1 from '../assets/sp1.png';
 import Sponsor2 from '../assets/sp2.png';
 import Sponsor3 from '../assets/sp3.png';
