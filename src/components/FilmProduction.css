@@ -1,0 +1,351 @@
+.film-production-container {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #F5E6D3;
+  overflow: hidden;
+  display: block;
+}
+
+/* Background Texture */
+.film-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 1;
+}
+
+.film-texture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Decorative Camera Icons */
+.camera-icon {
+  position: absolute;
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.camera-top-left {
+  top: 480px;
+  left: 80px;
+  transform: rotate(-15deg);
+}
+
+.camera-top-right {
+  top: 120px;
+  right: 150px;
+  transform: rotate(10deg);
+}
+
+.camera-middle-right {
+  top: 380px;
+  right: 100px;
+  transform: rotate(-8deg);
+}
+
+.camera-bottom-right {
+  bottom: 120px;
+  right: 180px;
+  transform: rotate(12deg);
+}
+
+.camera-bottom-left {
+  bottom: 80px;
+  left: 100px;
+  transform: rotate(-10deg);
+}
+
+/* Back Button */
+.back-button {
+  position: absolute;
+  top: 120px;
+  left: 140px;
+  z-index: 10;
+}
+
+.back-btn {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #F15D2B;
+  background-color: transparent;
+  border: 2px solid #F15D2B;
+  border-radius: 25px;
+  padding: 12px 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #F15D2B;
+  color: #F5E6D3;
+  transform: translateX(-5px);
+}
+
+.back-arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.back-btn:hover .back-arrow {
+  transform: translateX(-3px);
+}
+
+/* Quote Section */
+.film-quote-container {
+  position: absolute;
+  top: 80px;
+  left: 280px;
+  width: 900px;
+  height: 150px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brush-stroke-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.brush-stroke {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.8;
+}
+
+.film-quote {
+  position: relative;
+  z-index: 2;
+  font-family: 'Island Moments', cursive;
+  font-size: 48px;
+  font-weight: 400;
+  color: #0F3255;
+  text-align: center;
+  margin: 0;
+  padding: 0 40px;
+  line-height: 1.2;
+}
+
+/* Film Image Card */
+.film-image-card {
+  position: absolute;
+  top: 280px;
+  left: 240px;
+  width: 380px;
+  height: 450px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 6;
+  transform: rotate(-3deg);
+}
+
+.film-image {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+}
+
+.film-card-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #E5E5E5;
+}
+
+.film-card-label p {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2C3E50;
+  margin: 0;
+  text-align: center;
+}
+
+/* Content Section */
+.film-content {
+  position: absolute;
+  top: 280px;
+  left: 680px;
+  width: 600px;
+  z-index: 6;
+}
+
+.film-content-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #2C3E50;
+  margin: 0 0 24px 0;
+  line-height: 1.3;
+}
+
+.film-content-text {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #252729;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+}
+
+/* Services Section */
+.film-services {
+  margin-bottom: 40px;
+}
+
+.services-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #0F3255;
+  margin: 0 0 16px 0;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-list li {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #252729;
+  line-height: 1.8;
+  position: relative;
+  padding-left: 25px;
+}
+
+.services-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #F15D2B;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Explore CTA */
+.explore-cta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.explore-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #F15D2B;
+  margin: 0;
+}
+
+.arrow-wrapper {
+  display: flex;
+  align-items: center;
+  animation: slideRight 1.5s ease-in-out infinite;
+}
+
+@keyframes slideRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .film-production-container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 40px;
+  }
+
+  .film-quote-container {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .film-image-card {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto 40px;
+    transform: rotate(0deg);
+  }
+
+  .film-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .camera-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .film-production-container {
+    padding: 40px 20px;
+  }
+
+  .film-quote {
+    font-size: 32px;
+  }
+
+  .film-content-title {
+    font-size: 32px;
+  }
+
+  .film-content-text {
+    font-size: 16px;
+  }
+
+  .services-list li {
+    font-size: 18px;
+  }
+
+  .back-button {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 20px;
+  }
+}
