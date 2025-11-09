@@ -1,6 +1,6 @@
 import './FilmProduction.css';
 import BackgroundTexture from './BackgroundTexture.svg';
-import FilmImage from '../assets/film_productions/image-1762685989234.png';
+import FilmImage from '../assets/film_productions/main.png';
 import BrushStroke from '../assets/brush-stroke.png';
 
 const FilmProduction = () => {
